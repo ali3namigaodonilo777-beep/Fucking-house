@@ -460,3 +460,69 @@ footer p {
     object-fit: cover;
     object-position: center;
 }
+
+/* CORRECAO DO CARD DO FUNDADOR */
+.fundador .imagem-placeholder {
+    height: 320px;
+    min-height: 0;
+    max-height: 320px;
+    overflow: hidden;
+}
+
+.fundador .imagem-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    max-height: 320px;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.fundador {
+    grid-template-columns: 34% minmax(0, 1fr);
+    align-items: stretch;
+}
+
+.fundador .perfil-conteudo {
+    min-width: 0;
+    padding: 24px;
+}
+
+@media (max-width: 650px) {
+    .fundador {
+        grid-template-columns: 36% minmax(0, 1fr);
+    }
+
+    .fundador .imagem-placeholder {
+        height: 260px;
+        max-height: 260px;
+    }
+
+    .fundador .imagem-placeholder img {
+        height: 260px;
+        max-height: 260px;
+    }
+
+    .fundador .perfil-conteudo {
+        padding: 14px;
+    }
+}
+
+@media (max-width: 370px) {
+    .fundador {
+        grid-template-columns: 1fr;
+    }
+
+    .fundador .imagem-placeholder {
+        height: 210px;
+        max-height: 210px;
+        border-right: 0;
+        border-bottom: 1px solid var(--ouro-escuro);
+    }
+
+    .fundador .imagem-placeholder img {
+        height: 210px;
+        max-height: 210px;
+    }
+}
