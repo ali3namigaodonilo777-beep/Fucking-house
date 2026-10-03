@@ -991,3 +991,38 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 8px 30px rgba(229, 176, 75, 0.22);
 }
+
+/* ENTRADA COMPACTA DA FUCKING HOUSE */
+.inicio {
+    min-height: auto;
+    padding: 48px 20px 38px;
+}
+
+.inicio h1 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.inicio p {
+    margin-top: 8px;
+    margin-bottom: 22px;
+}
+
+.inicio .botao-entrar {
+    margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+    .inicio {
+        min-height: auto;
+        padding: 32px 18px 28px;
+    }
+
+    .inicio h1 {
+        font-size: clamp(2.2rem, 10vw, 3.4rem);
+    }
+
+    .inicio p {
+        margin-bottom: 18px;
+    }
+}
