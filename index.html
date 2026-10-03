@@ -3,22 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="theme-color" content="#100e0b">
+    <meta name="description" content="Conheça a comunidade Fucking House.">
     <title>Fucking House</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>FUCKING HOUSE</h1>
+    <header class="topo">
+        <a class="logo" href="#inicio">FUCKING <span>HOUSE</span></a>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#vagas">Membros</a>
+            <a href="#regras">Regras</a>
+        </nav>
     </header>
 
     <main>
-        <h2>Bem-vindo à Fucking House.</h2>
-        <p>Um lugar pra conhecer gente e compartilhar o caos.</p>
+        <section class="inicio" id="inicio">
+            <span class="etiqueta">NOSSO PEQUENO CAOS</span>
+            <h1>FUCKING <span>HOUSE</span></h1>
+            <p>Um lugar para conhecer pessoas, criar histórias e compartilhar o caos.</p>
+            <a class="botao" href="#equipe">Conhecer a house</a>
+        </section>
 
-        <a href="#sobre">Conhecer a house</a>
+        <section class="secao" id="sobre">
+            <span class="etiqueta">01 / A HOUSE</span>
+            <h2>Um lugar para chamar de seu.</h2>
+            <p>
+                Somos uma comunidade para fazer amizades, compartilhar
+                interesses e criar momentos juntos. Cada membro tem
+                seu espaço e sua própria história.
+            </p>
+        </section>
+
+        <section class="secao" id="equipe">
+            <span class="etiqueta">02 / HIERARQUIA</span>
+            <h2>Quem comanda a casa.</h2>
+            <p>Conheça as pessoas por trás da Fucking House.</p>
+
+            <div class="equipe-destaque">
+                <article class="perfil admin fundador">
+                    <div class="imagem-placeholder"><img src="public/imagens/dio.jpg" alt="Dio Brando"></div>
+
+                    <div class="perfil-conteudo">
+                        <span class="cargo">♛ FUNDADOR</span>
+                        <h3>Dio Brando</h3>
+                        <p class="obra">JoJo's Bizarre Adventure</p>
+                        <p class="membro">Fundador da Fucking House</p>
+
+                        <details>
+                            <summary>Conhecer o fundador</summary>
+                            <div class="descricao">
+                                <p><strong>Gosta:</strong> a preencher.</p>
+                                <p><strong>Não gosta:</strong> a preencher.</p>
+                                <p><strong>Apresentação:</strong> em breve.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="subtitulo">A administração</h3>
+
+            <div class="grade equipe-secundaria">
+                <article class="perfil admin">
+                    <div class="imagem-placeholder">FOTO DO NANAMI</div>
+                    <div class="perfil-conteudo">
+                        <span class="cargo">✦ ADMINISTRAÇÃO</span>
+                        <h3>Kento Nanami</h3>
+                        <p class="obra">Jujutsu Kaisen</p>
+                        <p class="membro">Membro: Luiza / Cuiza</p>
+
+                        <details>
+                            <summary>Conhecer o membro</summary>
+                            <div class="descricao">
+                                <p><strong>Gosta:</strong> a preencher.</p>
+                                <p><strong>Não gosta:</strong> a preencher.</p>
+                                <p><strong>Apresentação:</strong> em breve.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <article class="perfil admin">
+                    <div class="imagem-placeholder">FOTO DO AOBA</div>
+                    <div class="perfil-conteudo">
+                        <span class="cargo">⚜ SUBDONA</span>
+                        <h3>Aoba Seragaki</h3>
+                        <p class="obra">DRAMAtical Murder</p>
+                        <p class="membro">Membro: Pucca</p>
+
+                        <details>
+                            <summary>Conhecer o membro</summary>
+                            <div class="descricao">
+                                <p><strong>Gosta:</strong> a preencher.</p>
+                                <p><strong>Não gosta:</strong> a preencher.</p>
+                                <p><strong>Apresentação:</strong> em breve.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao" id="vagas">
+            <span class="etiqueta">03 / PERSONAGENS OCUPADOS</span>
+            <h2>Os membros da casa.</h2>
+            <p>Personagens escolhidos pelos integrantes da comunidade.</p>
+
+            <div class="grade membros-grade">
+                <article class="perfil personagem">
+                    <div class="imagem-placeholder">FOTO DO JOHNNY</div>
+                    <div class="perfil-conteudo">
+                        <span class="cargo">MEMBRO</span>
+                        <h3>Johnny Joestar</h3>
+                        <p class="obra">JoJo's Bizarre Adventure</p>
+                        <p class="membro">Membro: Jhonny</p>
+
+                        <details>
+                            <summary>Conhecer o membro</summary>
+                            <div class="descricao">
+                                <p><strong>Gosta:</strong> a preencher.</p>
+                                <p><strong>Não gosta:</strong> a preencher.</p>
+                                <p><strong>Apresentação:</strong> em breve.</p>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+            </div>
+
+            <p class="nota">
+                Outros membros serão adicionados conforme forem identificados.
+            </p>
+        </section>
+
+        <section class="secao" id="regras">
+            <span class="etiqueta">04 / CONVIVÊNCIA</span>
+            <h2>Nossas regras.</h2>
+            <p>As regras oficiais da comunidade aparecerão aqui.</p>
+            <div class="aviso">Regras em breve.</div>
+        </section>
+
+        <section class="secao" id="comunidade">
+            <span class="etiqueta">05 / FAÇA PARTE</span>
+            <h2>A casa está aqui.</h2>
+            <p>O link da comunidade será adicionado quando estiver pronto.</p>
+            <div class="aviso">Link do grupo em breve.</div>
+        </section>
     </main>
+
+    <footer>
+        <span>FUCKING HOUSE</span>
+        <p>Feito para a nossa comunidade.</p>
+    </footer>
 
 </body>
 </html>
