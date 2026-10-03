@@ -1468,3 +1468,53 @@ body {
     }
 }
 
+
+/* FKG: CORRECAO FINAL DOS CARDS NO CELULAR */
+@media (max-width: 650px) {
+    #equipe,
+    #vagas {
+        width: 100%;
+        min-width: 0;
+        overflow-x: clip;
+    }
+
+    #equipe .equipe-destaque,
+    #equipe .grade.equipe-secundaria,
+    #vagas .grade.membros-grade {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        min-width: 0;
+        gap: 18px;
+    }
+
+    #equipe .perfil,
+    #vagas .perfil {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #equipe .fundador {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #equipe .fundador .imagem-placeholder {
+        height: 230px;
+        min-height: 230px;
+        border-right: 0;
+        border-bottom: 1px solid #594321;
+    }
+
+    #equipe .perfil-conteudo,
+    #vagas .perfil-conteudo {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    #equipe img,
+    #vagas img {
+        max-width: 100%;
+    }
+}
