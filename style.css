@@ -1090,3 +1090,54 @@ main > section.tela-oculta {
     .artigo-regra h4 { font-size: 15px; }
     .artigo-regra p, .regulamento-aviso p { font-size: 15px; line-height: 1.85; }
 }
+
+/* FKG: ESPACAMENTO DO REGULAMENTO */
+.regulamento-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 28px;
+}
+
+.regulamento-capitulo {
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.regulamento-capitulo > h3 {
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+}
+
+.artigo-regra {
+    margin-bottom: 26px;
+    padding: 18px 20px;
+    line-height: 1.8;
+}
+
+.artigo-regra h4 {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.artigo-regra p {
+    margin-top: 8px;
+    line-height: 1.9;
+}
+
+.regulamento-final {
+    margin-top: 40px;
+    padding: 24px;
+    line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+    .artigo-regra {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+
+    .regulamento-capitulo {
+        margin-top: 28px;
+    }
+}
