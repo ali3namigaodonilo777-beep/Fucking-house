@@ -205,5 +205,51 @@
         <p>Feito para a nossa comunidade.</p>
     </footer>
 
+
+<script>
+/* FKG_TELEPORTE */
+(() => {
+    const telas = [...document.querySelectorAll('main > section')];
+    const links = [...document.querySelectorAll('a[href^="#"]')];
+
+    function abrirTela(id, atualizarEndereco = false) {
+        const tela = telas.find(item => item.id === id);
+        if (!tela) return;
+
+        telas.forEach(item => {
+            item.classList.toggle('tela-oculta', item !== tela);
+        });
+
+        links.forEach(link => {
+            const ativo = link.getAttribute('href') === '#' + id;
+            link.classList.toggle('tela-ativa', ativo);
+            if (ativo) link.setAttribute('aria-current', 'page');
+            else link.removeAttribute('aria-current');
+        });
+
+        if (atualizarEndereco && location.hash !== '#' + id) {
+            history.pushState(null, '', '#' + id);
+        }
+
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    links.forEach(link => {
+        link.addEventListener('click', event => {
+            const id = link.getAttribute('href').slice(1);
+            if (!telas.some(tela => tela.id === id)) return;
+            event.preventDefault();
+            abrirTela(id, true);
+        });
+    });
+
+    window.addEventListener('popstate', () => {
+        abrirTela(location.hash.slice(1) || 'inicio');
+    });
+
+    abrirTela(location.hash.slice(1) || 'inicio');
+})();
+</script>
+
 </body>
 </html>

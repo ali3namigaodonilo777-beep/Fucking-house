@@ -1026,3 +1026,22 @@ footer {
         margin-bottom: 18px;
     }
 }
+
+
+/* FKG_TELEPORTE: navegacao por telas */
+main > section.tela-oculta {
+    display: none !important;
+}
+
+.topo nav a.tela-ativa,
+.menu-inferior a.tela-ativa {
+    color: var(--ouro-claro);
+}
+
+.topo nav a.tela-ativa {
+    border-bottom: 1px solid var(--ouro);
+}
+
+.menu-inferior a.tela-ativa {
+    background: rgba(180, 140, 65, 0.10);
+}
