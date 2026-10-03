@@ -1568,3 +1568,39 @@ body {
         max-width: 100%;
     }
 }
+
+/* FKG: CARDS VERTICAIS NO CELULAR */
+@media (max-width: 650px) {
+    #equipe .equipe-secundaria .perfil,
+    #vagas .membros-grade .perfil {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        min-width: 0;
+    }
+
+    #equipe .equipe-secundaria .imagem-placeholder,
+    #vagas .membros-grade .imagem-placeholder {
+        width: 100%;
+        height: 220px;
+        min-height: 220px;
+        border-right: 0;
+        border-bottom: 1px solid #594321;
+        box-sizing: border-box;
+    }
+
+    #equipe .equipe-secundaria .imagem-placeholder img,
+    #vagas .membros-grade .imagem-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #equipe .equipe-secundaria .perfil-conteudo,
+    #vagas .membros-grade .perfil-conteudo {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+}
