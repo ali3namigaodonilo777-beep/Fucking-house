@@ -1045,3 +1045,48 @@ main > section.tela-oculta {
 .menu-inferior a.tela-ativa {
     background: rgba(180, 140, 65, 0.10);
 }
+
+
+/* CÓDIGO DE CONDUTA FKG */
+.regulamento-intro { max-width: 760px; }
+.regulamento-aviso {
+    margin: 28px 0; padding: 22px;
+    border: 1px solid var(--borda);
+    border-left: 3px solid var(--ouro);
+    background: rgba(180, 140, 65, 0.045); border-radius: 4px;
+}
+.regulamento-aviso > strong {
+    display: block; margin-bottom: 12px; color: var(--ouro-claro);
+    font-size: 12px; letter-spacing: 2px;
+}
+.regulamento-aviso p { margin: 0; line-height: 1.85; font-size: 15px; }
+.regulamento-lista { display: flex; flex-direction: column; gap: 28px; margin-top: 32px; }
+.regulamento-capitulo > h3 {
+    margin: 0 0 16px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--borda); color: var(--ouro-claro);
+    font-size: 14px; line-height: 1.7; letter-spacing: 1.2px;
+}
+.artigo-regra {
+    margin: 12px 0; padding: 18px 20px;
+    border: 1px solid var(--borda); border-radius: 5px;
+    background: rgba(255,255,255,0.015);
+}
+.artigo-regra h4 {
+    margin: 0 0 9px; color: var(--ouro-claro);
+    font-size: 15px; line-height: 1.6;
+}
+.artigo-regra p {
+    margin: 0; font-size: 15px; line-height: 1.9;
+    color: var(--texto-secundario, #c2bdb2);
+}
+.regulamento-final { margin-top: 32px; text-align: center; }
+.regulamento-final > span {
+    display: block; margin-top: 18px; color: var(--ouro-claro);
+    font-size: 10px; font-weight: 700; line-height: 1.8; letter-spacing: 1.5px;
+}
+@media (max-width: 600px) {
+    .regulamento-aviso { padding: 17px; }
+    .artigo-regra { padding: 16px; }
+    .artigo-regra h4 { font-size: 15px; }
+    .artigo-regra p, .regulamento-aviso p { font-size: 15px; line-height: 1.85; }
+}
