@@ -960,3 +960,34 @@ footer {
         line-height: 1.2;
     }
 }
+
+/* BOTAO PRINCIPAL ENTRAR NA HOUSE */
+.botao-entrar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    min-width: 230px;
+    min-height: 58px;
+    padding: 16px 25px;
+    background: #e5b04b;
+    color: #17120a;
+    border: 1px solid #f2cc78;
+    border-radius: 18px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    box-shadow: 0 6px 24px rgba(229, 176, 75, 0.12);
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.botao-entrar span {
+    font-size: 20px;
+}
+
+.botao-entrar:hover,
+.botao-entrar:active {
+    background: #f2cc78;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(229, 176, 75, 0.22);
+}
