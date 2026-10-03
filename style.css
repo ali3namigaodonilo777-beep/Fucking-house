@@ -1276,3 +1276,71 @@ body {
     }
 }
 
+
+/* FKG: ENTRADA DO PALACIO */
+.inicio {
+    position: relative;
+    isolation: isolate;
+    min-height: 580px;
+    padding: 110px 24px;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8, 7, 6, 0.24) 0%,
+            rgba(8, 7, 6, 0.48) 45%,
+            rgba(8, 7, 6, 0.96) 100%
+        ),
+        linear-gradient(
+            90deg,
+            rgba(8, 7, 6, 0.48),
+            transparent 50%,
+            rgba(8, 7, 6, 0.38)
+        ),
+        url("public/imagens/headerrr.jpg") center 45% / cover no-repeat;
+    border-bottom: 1px solid #594321;
+}
+
+.inicio h1 {
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+}
+
+.inicio .etiqueta {
+    text-shadow: 0 2px 12px #000;
+}
+
+.inicio > p {
+    color: #e0d8ca;
+    text-shadow: 0 2px 12px #000;
+}
+
+.inicio .botao-entrar {
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 900px) {
+    .inicio {
+        min-height: 620px;
+        padding-top: 130px;
+        padding-bottom: 130px;
+        background-position: center 43%;
+    }
+
+    .inicio h1 {
+        font-size: clamp(64px, 7vw, 92px);
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 650px) {
+    .inicio {
+        min-height: 520px;
+        padding: 90px 20px;
+        background-position: center center;
+    }
+
+    .inicio h1 {
+        font-size: clamp(36px, 9vw, 58px);
+        letter-spacing: 1px;
+    }
+}
+
